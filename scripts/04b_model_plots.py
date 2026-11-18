@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from pathsnap.config import FIGURES_DIR, RESULTS_DIR  # noqa: E402
 
 P4 = RESULTS_DIR / "phase4"
-BLUE, RED, GREY = "#137C78", "#D18A45", "#71858A"
+BLUE, RED, GREY = "#1f6feb", "#d1242f", "#9aa0a6"
 
 
 def save(fig, name):
@@ -93,7 +93,7 @@ def main():
     for ax, m in zip(np.ravel(axes), models):
         cm = np.array(json.loads((P4 / "confusion" / f"{m}.json").read_text())["matrix"], float)
         cmn = cm / cm.sum(1, keepdims=True)
-        ax.imshow(cmn, cmap="YlGnBu", vmin=0, vmax=1)
+        ax.imshow(cmn, cmap="Blues", vmin=0, vmax=1)
         for i in range(2):
             for j in range(2):
                 ax.text(j, i, f"{cmn[i, j]:.2f}\n({int(cm[i, j]):,})", ha="center", va="center", fontsize=8,
@@ -144,7 +144,7 @@ def main():
     t.config = t.config.str.replace("|", "/", regex=False)
     lines = ["| " + " | ".join(t.columns) + " |", "|" + "---|" * len(t.columns)]
     lines += ["| " + " | ".join(map(str, r)) + " |" for r in t.itertuples(index=False)]
-    (P4 / "comparison.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (P4 / "comparison.md").write_text("\n".join(lines) + "\n")
     print("\n".join(lines))
 
 
