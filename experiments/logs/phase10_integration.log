@@ -3,11 +3,11 @@ API ok: XGBClassifier + HMM, eval dir student_test, 10 trips
 00000007: top1 1.0000  route F1 0.9965  95 ms round trip
 00000009: top1 0.9209  route F1 0.9733  264 ms round trip
 00000040: top1 0.9793  route F1 0.9996  283 ms round trip
-00000048: top1 0.9673  route F1 0.9986  213 ms round trip
-00000056: top1 0.9913  route F1 0.9988  186 ms round trip
-00000058: top1 0.9866  route F1 0.9995  201 ms round trip
-00000059: top1 0.9767  route F1 0.9995  170 ms round trip
-00000061: top1 0.9807  route F1 0.9995  203 ms round trip
-00000062: top1 0.9728  route F1 0.9995  191 ms round trip
-10/10 trips succeeded; pooled Top-1 0.9768; mean route F1 0.9966
+00000052: top1 1.0000  route F1 0.9984  44 ms round trip
+00000056: top1 0.9661  route F1 0.9860  643 ms round trip
+00000065: top1 0.8932  route F1 0.9912  148 ms round trip
+00000076: top1 0.9818  route F1 0.9828  600 ms round trip
+00000077: top1 0.9021  route F1 0.9859  466 ms round trip
+00000091: top1 0.9554  route F1 0.9944  150 ms round trip
 unknown trip -> HTTP 404
+10/10 trips succeeded; pooled Top-1 0.9552; mean route F1 0.9905
