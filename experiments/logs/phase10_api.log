@@ -1,0 +1,55 @@
+00:37:17 INFO model loaded: XGBClassifier | eval dir: D:\ML Hackathon new\PathSnap-Team70\data\student_test
+INFO:     Started server process [9372]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+00:37:20 INFO GET /health from 127.0.0.1 -> 200 (28 ms)
+INFO:     127.0.0.1:64066 - "GET /health HTTP/1.1" 200 OK
+00:37:22 INFO GET /trips from 127.0.0.1 -> 200 (14 ms)
+INFO:     127.0.0.1:64068 - "GET /trips HTTP/1.1" 200 OK
+00:37:24 INFO predict trip 00000000: running pipeline
+00:37:40 INFO predict trip 00000000: 2503 points, 196 route arcs, 14594 ms
+00:37:40 INFO POST /predict from 127.0.0.1 -> 200 (16546 ms)
+INFO:     127.0.0.1:64070 - "POST /predict HTTP/1.1" 200 OK
+00:37:43 INFO predict trip 00000007: running pipeline
+00:37:47 INFO predict trip 00000007: 1354 points, 121 route arcs, 3901 ms
+00:37:47 INFO POST /predict from 127.0.0.1 -> 200 (4893 ms)
+INFO:     127.0.0.1:64075 - "POST /predict HTTP/1.1" 200 OK
+00:37:50 INFO predict trip 00000009: running pipeline
+00:38:00 INFO predict trip 00000009: 1049 points, 446 route arcs, 9005 ms
+00:38:00 INFO POST /predict from 127.0.0.1 -> 200 (10279 ms)
+INFO:     127.0.0.1:64077 - "POST /predict HTTP/1.1" 200 OK
+00:38:02 INFO predict trip 00000040: running pipeline
+00:38:14 INFO predict trip 00000040: 2995 points, 327 route arcs, 9450 ms
+00:38:14 INFO POST /predict from 127.0.0.1 -> 200 (12466 ms)
+INFO:     127.0.0.1:64079 - "POST /predict HTTP/1.1" 200 OK
+00:38:16 INFO predict trip 00000052: running pipeline
+00:38:19 INFO predict trip 00000052: 262 points, 93 route arcs, 2411 ms
+00:38:19 INFO POST /predict from 127.0.0.1 -> 200 (2821 ms)
+INFO:     127.0.0.1:64081 - "POST /predict HTTP/1.1" 200 OK
+00:38:21 INFO predict trip 00000056: running pipeline
+00:38:49 INFO predict trip 00000056: 3958 points, 1339 route arcs, 20411 ms
+00:38:49 INFO POST /predict from 127.0.0.1 -> 200 (27834 ms)
+INFO:     127.0.0.1:64572 - "POST /predict HTTP/1.1" 200 OK
+00:38:51 INFO predict trip 00000065: running pipeline
+00:38:58 INFO predict trip 00000065: 768 points, 151 route arcs, 6442 ms
+00:38:58 INFO POST /predict from 127.0.0.1 -> 200 (7120 ms)
+INFO:     127.0.0.1:64577 - "POST /predict HTTP/1.1" 200 OK
+00:39:00 INFO predict trip 00000076: running pipeline
+00:39:25 INFO predict trip 00000076: 1486 points, 400 route arcs, 21907 ms
+00:39:25 INFO POST /predict from 127.0.0.1 -> 200 (25007 ms)
+INFO:     127.0.0.1:64579 - "POST /predict HTTP/1.1" 200 OK
+00:39:28 INFO predict trip 00000077: running pipeline
+00:39:51 INFO predict trip 00000077: 3911 points, 359 route arcs, 20189 ms
+00:39:51 INFO POST /predict from 127.0.0.1 -> 200 (23354 ms)
+INFO:     127.0.0.1:49677 - "POST /predict HTTP/1.1" 200 OK
+00:39:53 INFO predict trip 00000091: running pipeline
+00:40:02 INFO predict trip 00000091: 874 points, 235 route arcs, 7746 ms
+00:40:02 INFO POST /predict from 127.0.0.1 -> 200 (9066 ms)
+INFO:     127.0.0.1:56353 - "POST /predict HTTP/1.1" 200 OK
+00:40:04 INFO POST /predict from 127.0.0.1 -> 404 (17 ms)
+INFO:     127.0.0.1:56356 - "POST /predict HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9372]
