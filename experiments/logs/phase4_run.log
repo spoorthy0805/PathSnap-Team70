@@ -1,0 +1,57 @@
+train rows 1,276,667 (78 trips) | test rows 146,896
+== lgbm (Boosting)
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] fold 0: top1 0.9016  f1 0.9423  logloss 0.0875  (train top1 0.9175)  fit 8.7s
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] fold 1: top1 0.8906  f1 0.9334  logloss 0.0948  (train top1 0.9448)  fit 8.6s
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] fold 2: top1 0.8432  f1 0.9192  logloss 0.1155  (train top1 0.9007)  fit 8.7s
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] fold 3: top1 0.9264  f1 0.9532  logloss 0.0592  (train top1 0.9318)  fit 8.9s
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] fold 4: top1 0.8578  f1 0.9314  logloss 0.0794  (train top1 0.9624)  fit 8.7s
+/Users/spoorthy/sem5/ML/hackathon/pathsnap/.venv/lib/python3.11/site-packages/lightgbm/sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  [lgbm] student_test: top1 0.8945  f1 0.9360  logloss 0.0765  continuity 0.9378
+== xgb (Boosting)
+  [xgb] fold 0: top1 0.9095  f1 0.9452  logloss 0.0683  (train top1 0.9220)  fit 6.8s
+  [xgb] fold 1: top1 0.8897  f1 0.9334  logloss 0.0951  (train top1 0.9401)  fit 6.8s
+  [xgb] fold 2: top1 0.8471  f1 0.9207  logloss 0.1100  (train top1 0.8977)  fit 6.7s
+  [xgb] fold 3: top1 0.9268  f1 0.9534  logloss 0.0589  (train top1 0.9284)  fit 7.0s
+  [xgb] fold 4: top1 0.8582  f1 0.9315  logloss 0.0797  (train top1 0.9601)  fit 7.0s
+  [xgb] student_test: top1 0.8970  f1 0.9375  logloss 0.0731  continuity 0.9414
+== mlp (Neural network)
+  [mlp] fold 0: top1 0.9039  f1 0.9402  logloss 0.0763  (train top1 0.8964)  fit 12.0s
+  [mlp] fold 1: top1 0.8871  f1 0.9312  logloss 0.1011  (train top1 0.9157)  fit 12.2s
+  [mlp] fold 2: top1 0.8472  f1 0.9177  logloss 0.1171  (train top1 0.8686)  fit 12.1s
+  [mlp] fold 3: top1 0.9225  f1 0.9480  logloss 0.0672  (train top1 0.9044)  fit 12.2s
+  [mlp] fold 4: top1 0.8541  f1 0.9269  logloss 0.0872  (train top1 0.9433)  fit 11.8s
+  [mlp] student_test: top1 0.8890  f1 0.9309  logloss 0.0801  continuity 0.9423
+== rf (Ensemble (bagging))
+  [rf] fold 0: top1 0.9048  f1 0.9435  logloss 0.0727  (train top1 0.9217)  fit 22.5s
+  [rf] fold 1: top1 0.8882  f1 0.9340  logloss 0.0930  (train top1 0.9341)  fit 24.0s
+  [rf] fold 2: top1 0.8454  f1 0.9215  logloss 0.1148  (train top1 0.8899)  fit 24.8s
+  [rf] fold 3: top1 0.9238  f1 0.9510  logloss 0.0623  (train top1 0.9322)  fit 27.2s
+  [rf] fold 4: top1 0.8582  f1 0.9320  logloss 0.0833  (train top1 0.9578)  fit 26.1s
+  [rf] student_test: top1 0.8859  f1 0.9328  logloss 0.0769  continuity 0.9364
+== knn (Instance-based)
+  [knn] fold 0: top1 0.8968  f1 0.9337  logloss 0.1183  (train top1 0.8501)  fit 0.0s
+  [knn] fold 1: top1 0.8809  f1 0.9253  logloss 0.1713  (train top1 0.9271)  fit 0.0s
+  [knn] fold 2: top1 0.8380  f1 0.9102  logloss 0.1942  (train top1 0.9208)  fit 0.0s
+  [knn] fold 3: top1 0.9038  f1 0.9377  logloss 0.1115  (train top1 0.8415)  fit 0.0s
+  [knn] fold 4: top1 0.8388  f1 0.9155  logloss 0.1453  (train top1 0.8943)  fit 0.0s
+  [knn] student_test: top1 0.8745  f1 0.9199  logloss 0.1295  continuity 0.9296
+ model             family  cv_f1_macro_mean  cv_top1_mean  cv_log_loss_mean  test_top1  test_f1_macro  test_log_loss  test_continuity  cv_fit_s_mean  test_predict_ms_per_1k_points
+logreg             Linear            0.9292        0.8795            0.1030     0.8764         0.9235         0.0985           0.9339         0.6511                         0.1188
+   gnb      Probabilistic            0.8708        0.8574            0.5211     0.8618         0.8673         0.4773           0.9239         0.0844                         0.2861
+   knn     Instance-based            0.9245        0.8717            0.1481     0.8745         0.9199         0.1295           0.9296         0.0233                       214.9355
+ dtree               Tree            0.9313        0.8792            0.0995     0.8837         0.9305         0.0864           0.9346        11.2561                         0.1970
+    rf Ensemble (bagging)            0.9364        0.8841            0.0852     0.8859         0.9328         0.0769           0.9364        24.9176                         6.8461
+  lgbm           Boosting            0.9359        0.8839            0.0873     0.8945         0.9360         0.0765           0.9378         8.7224                        17.2618
+   xgb           Boosting            0.9369        0.8863            0.0824     0.8970         0.9375         0.0731           0.9414         6.8590                         3.9288
+   mlp     Neural network            0.9328        0.8830            0.0898     0.8890         0.9309         0.0801           0.9423        12.0567                         0.7111

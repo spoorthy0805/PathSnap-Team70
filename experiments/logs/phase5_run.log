@@ -1,0 +1,43 @@
+trial   0 COMPLETE value 0.8863 best 0.8863
+trial   1 COMPLETE value 0.8836 best 0.8863
+trial   2 COMPLETE value 0.8863 best 0.8863
+trial   3 COMPLETE value 0.8862 best 0.8863
+trial   4 COMPLETE value 0.8842 best 0.8863
+trial   5 COMPLETE value 0.8857 best 0.8863
+trial   6 COMPLETE value 0.8859 best 0.8863
+trial   7 COMPLETE value 0.8854 best 0.8863
+trial   8 COMPLETE value 0.8854 best 0.8863
+trial   9 COMPLETE value 0.8861 best 0.8863
+trial  10 COMPLETE value 0.8856 best 0.8863
+trial  11 COMPLETE value 0.8825 best 0.8863
+trial  12 COMPLETE value 0.8864 best 0.8864
+trial  13 COMPLETE value 0.8865 best 0.8865
+trial  14 COMPLETE value 0.8866 best 0.8866
+trial  15 COMPLETE value 0.8866 best 0.8866
+trial  16 COMPLETE value 0.8864 best 0.8866
+trial  17 COMPLETE value 0.8866 best 0.8866
+trial  18 COMPLETE value 0.8856 best 0.8866
+trial  19 COMPLETE value 0.8852 best 0.8866
+trial  20 COMPLETE value 0.8860 best 0.8866
+trial  21 COMPLETE value 0.8856 best 0.8866
+trial  22 COMPLETE value 0.8867 best 0.8867
+trial  23 COMPLETE value 0.8861 best 0.8867
+trial  24 COMPLETE value 0.8857 best 0.8867
+trial  25 COMPLETE value 0.8861 best 0.8867
+trial  26 COMPLETE value 0.8866 best 0.8867
+trial  27 COMPLETE value 0.8862 best 0.8867
+trial  28 COMPLETE value 0.8859 best 0.8867
+trial  29 COMPLETE value 0.8853 best 0.8867
+trial  30 COMPLETE value 0.8859 best 0.8867
+trial  31 COMPLETE value 0.8852 best 0.8867
+trial  32 COMPLETE value 0.8859 best 0.8867
+trial  33 COMPLETE value 0.8869 best 0.8869
+trial  34 COMPLETE value 0.8845 best 0.8869
+trial  35 COMPLETE value 0.8857 best 0.8869
+trial  36 COMPLETE value 0.8866 best 0.8869
+trial  37 COMPLETE value 0.8857 best 0.8869
+trial  38 COMPLETE value 0.8857 best 0.8869
+trial  39 COMPLETE value 0.8871 best 0.8871
+best trial 39: CV Top-1 0.8871  params {'n_estimators': 1000, 'learning_rate': 0.09430753586831254, 'max_depth': 6, 'min_child_weight': 2.773928071497408, 'subsample': 0.8342590210081754, 'colsample_bytree': 0.45194209999433704, 'gamma': 0.182241631531777, 'reg_lambda': 1.0777184579175407, 'reg_alpha': 0.0004681942976125622}
+xgb_untuned: CV top1 0.8863 f1 0.9369 | test top1 0.8970 f1 0.9375 logloss 0.0731
+xgb_tuned: CV top1 0.8871 f1 0.9360 | test top1 0.8968 f1 0.9365 logloss 0.0739
