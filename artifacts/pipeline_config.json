@@ -1,0 +1,63 @@
+{
+  "pipeline": "candidates -> XGBoost candidate scoring -> HMM/Viterbi",
+  "features": [
+    "dist",
+    "rank",
+    "dist_minus_min",
+    "dist_ratio",
+    "frac",
+    "at_endpoint",
+    "n_cands",
+    "n_within_radius",
+    "min_dist",
+    "second_gap",
+    "arc_len_log",
+    "two_way",
+    "out_deg_end",
+    "in_deg_start",
+    "heading_cos",
+    "heading_diff",
+    "heading_cos_wide",
+    "heading_valid",
+    "speed",
+    "dt_prev",
+    "dt_next",
+    "gap_flag",
+    "dist_prev1",
+    "dist_next1",
+    "dist_win5_mean",
+    "dist_win5_max"
+  ],
+  "candidates": {
+    "radius_m": 50.0,
+    "k": 12,
+    "piece_len_m": 20.0
+  },
+  "classifier": {
+    "type": "XGBClassifier",
+    "params": {
+      "n_estimators": 400,
+      "learning_rate": 0.05,
+      "max_depth": 7,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    },
+    "tree_method": "hist",
+    "seed": 42,
+    "trained_on": "78 reliable train trips (1,276,667 rows)",
+    "excluded_trips": ["00000033", "00000054"],
+    "fit_seconds": 5.8
+  },
+  "decoder": {
+    "alpha": 1.0,
+    "beta": 2.0,
+    "gap_s": 120.0,
+    "unreachable_penalty": 30.0,
+    "route_limit_m": 1000.0
+  },
+  "versions": {
+    "xgboost": "3.2.0",
+    "scikit-learn": "1.9.1"
+  },
+  "created": "2026-11-18T06:19:26+00:00"
+}
