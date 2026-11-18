@@ -1,0 +1,29 @@
+{
+  "train": {
+    "rows": 1342714,
+    "trips": 80,
+    "points_total": 208417,
+    "points_with_candidates": 190187,
+    "points_label_in_candidates": 184108,
+    "positive_rate": 0.1371163181437,
+    "mean_candidates_per_point": 7.059967295346159
+  },
+  "student_test": {
+    "rows": 146896,
+    "trips": 10,
+    "points_total": 19160,
+    "points_with_candidates": 19160,
+    "points_label_in_candidates": 19119,
+    "positive_rate": 0.13015330574011547,
+    "mean_candidates_per_point": 7.666805845511482
+  },
+  "train_reliable": {
+    "rows": 1276667,
+    "trips": 78,
+    "points_total": 183260,
+    "points_with_candidates": 181594,
+    "points_label_in_candidates": 180379,
+    "positive_rate": 0.14128899705248119,
+    "mean_candidates_per_point": 7.030336905404363
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "student_test": {
+    "trips": 10,
+    "points_total": 19160,
+    "points_per_trip": {
+      "count": 10.0,
+      "mean": 1916.0,
+      "std": 1335.4,
+      "min": 262.0,
+      "25%": 917.8,
+      "50%": 1420.0,
+      "75%": 2872.0,
+      "max": 3958.0
+    },
+    "track_km_total": 297.0,
+    "dt_frac_1s_pooled": 0.9862140992167102,
+    "trips_with_gaps_gt_30s": 2,
+    "trips_with_jumps_gt_70ms": 1,
+    "nan_values": 0,
+    "invalid_coords": 0,
+    "nonmonotonic_t": 0,
+    "isolated_nodes_total": 0,
+    "trips_multi_weak_components": 10,
+    "route_contiguity_mean": 0.9997319034852546,
+    "trips_with_route_breaks": 1,
+    "gps_to_route_median_m_pooled": 5.16499785208662,
+    "gps_to_route_p95_m_pooled": 16.787739278059757,
+    "gps_to_route_p99_m_pooled": 27.956651932633804,
+    "arc_len_median_m_pooled": 25.2903204784304
+  },
+  "train": {
+    "trips": 80,
+    "points_total": 208417,
+    "points_per_trip": {
+      "count": 80.0,
+      "mean": 2605.2,
+      "std": 3312.3,
+      "min": 361.0,
+      "25%": 945.8,
+      "50%": 1529.0,
+      "75%": 2792.8,
+      "max": 19313.0
+    },
+    "track_km_total": 2978.4,
+    "dt_frac_1s_pooled": 0.9650134157638826,
+    "trips_with_gaps_gt_30s": 28,
+    "trips_with_jumps_gt_70ms": 10,
+    "nan_values": 0,
+    "invalid_coords": 0,
+    "nonmonotonic_t": 0,
+    "isolated_nodes_total": 0,
+    "trips_multi_weak_components": 79,
+    "route_contiguity_mean": 0.9993461551444497,
+    "trips_with_route_breaks": 10,
+    "gps_to_route_median_m_pooled": 5.614380808601276,
+    "gps_to_route_p95_m_pooled": 140.28761152261401,
+    "gps_to_route_p99_m_pooled": 203.71330859674163,
+    "arc_len_median_m_pooled": 25.762381823684947
+  }
+}

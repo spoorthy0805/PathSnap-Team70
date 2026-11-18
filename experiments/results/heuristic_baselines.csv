@@ -1,0 +1,7 @@
+split,rule,top1
+train,nearest arc (rank 0),0.4948012878028184
+train,nearest arc with heading agreement,0.7211263956395112
+train,5-point window mean distance + heading,0.7061276191481501
+student_test,nearest arc (rank 0),0.5373173277661796
+student_test,nearest arc with heading agreement,0.8260960334029227
+student_test,5-point window mean distance + heading,0.8091336116910229
