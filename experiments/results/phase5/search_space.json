@@ -1,0 +1,57 @@
+{
+  "model": "XGBClassifier(tree_method='hist')",
+  "space": {
+    "n_estimators": [
+      "int",
+      200,
+      1200,
+      100
+    ],
+    "learning_rate": [
+      "float_log",
+      0.01,
+      0.3
+    ],
+    "max_depth": [
+      "int",
+      3,
+      10,
+      1
+    ],
+    "min_child_weight": [
+      "float_log",
+      1.0,
+      50.0
+    ],
+    "subsample": [
+      "float",
+      0.5,
+      1.0
+    ],
+    "colsample_bytree": [
+      "float",
+      0.4,
+      1.0
+    ],
+    "gamma": [
+      "float",
+      0.0,
+      5.0
+    ],
+    "reg_lambda": [
+      "float_log",
+      0.001,
+      10.0
+    ],
+    "reg_alpha": [
+      "float_log",
+      0.0001,
+      1.0
+    ]
+  },
+  "objective": "maximise mean observation Top-1 over 5 GroupKFold(by trip, shuffle, seed 42) folds, 78 trips",
+  "sampler": "TPESampler(seed=42, n_startup_trials=10)",
+  "pruner": "MedianPruner(n_startup_trials=8, n_warmup_steps=1)",
+  "trial_0": "untuned Phase 4 configuration (enqueued)",
+  "student_test_used_in_search": false
+}
