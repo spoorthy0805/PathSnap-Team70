@@ -1,0 +1,9 @@
+{
+  "alpha": 1.0,
+  "beta": 2.0,
+  "gap_s": 120.0,
+  "unreachable_penalty": 30.0,
+  "route_limit_m": 1000.0,
+  "classifier": "xgb_tuned",
+  "selected_on": "train OOF (78 trips), objective = observation Top-1"
+}
